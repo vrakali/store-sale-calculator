@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<link rel="stylesheet" href="main.css"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
+	
+	
+	<title>Store Sale Calculator</title>
+</head>
+
+<body>
+
+<h1>Store Sale Calculator</h1>
+
+<div id="wrapper">
+
+<h2>Enter Discount Amount (in percentage):</h2>
+
+<label for="discount">Discount:</label> <input type="text" id="discount"/>
+
+<h2>Enter Store Item Prices:</h2>
+
+<p>Separate by commas. <b>Do not put commas in your numbers (i.e. write 1000 not 1,000)</b></p>
+
+<textarea id="itemList" rows="10" cols="80"></textarea>
+
+<button id="itemListSubmit">Calculate Items</button>
+
+<div id="results"></div>
+
+</div>
+
+<script src="calculate.js"></script>
+</body>
+
+</html>

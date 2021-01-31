@@ -28,7 +28,7 @@ function calcDiscount() {
 	
 	var results = document.getElementById("results");
 	
-	results.innerHTML = "<p>Your item total is: </p>" + total;
+	results.innerHTML = "<h3>Item Total:</h3>" + total;
 }
 
 document.getElementById("itemListSubmit").addEventListener("click", calcDiscount, false);

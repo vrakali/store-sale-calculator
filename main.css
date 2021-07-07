@@ -5,7 +5,7 @@
 
 body {
 	background-color:#6c6785;
-	font-size:0.9em;
+	font-size:0.8em;
 	font-family:'Open Sans';
 }
 
@@ -33,7 +33,9 @@ p {
 }
 
 button {
-	background-color:#6c5785;
+	background-color:#444153;
+	color:#fff;
+	cursor:pointer;
 	padding:1em;
 	border:none;
 	margin:auto;
@@ -45,4 +47,5 @@ input, textarea {
 	border:none;
 	margin:1em;
 	padding:0.2em;
+	background-color:#958eb7;
 }

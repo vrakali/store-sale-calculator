@@ -1,8 +1,6 @@
 function calcDiscount() {
 	var percentage = document.getElementById("discount").value;
 	
-	console.log(percentage);
-	
 	percentage *= 0.01;
 	percentage = 1 - percentage;
 	
@@ -22,13 +20,14 @@ function calcDiscount() {
 	
 	var total = sum * percentage;
 	
-	console.log(total);
-	console.log(sum);
-	console.log(percentage);
-	
 	var results = document.getElementById("results");
 	
-	results.innerHTML = "<h3>Item Total:</h3>" + total;
+	if (Number.isNaN(total)) {
+		results.innerHTML = "<h3>Error: Please make sure that you formatted the numbers correctly.</h3>";
+	}
+	else {
+		results.innerHTML = "<h3>Item Total:</h3>" + total;
+	}
 }
 
 document.getElementById("itemListSubmit").addEventListener("click", calcDiscount, false);

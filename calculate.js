@@ -23,7 +23,7 @@ function calcDiscount() {
 	var results = document.getElementById("results");
 	
 	if (Number.isNaN(total)) {
-		results.innerHTML = "<h3>Error: Please make sure that you formatted the numbers correctly.</h3>";
+		results.innerHTML = "<h3>Error: Please make sure that information was entered in the correct format.</h3>";
 	}
 	else {
 		results.innerHTML = "<h3>Item Total:</h3>" + total;
